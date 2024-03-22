@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="text/javascript" src="index.js"></script>
+    <title>Challenge encriptador</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="logoimg" src="img/logo.png">
+            <h1 class="title">ENCRIPTADOR DE MENSAJES</h1>
+        </div>
+        <div class="left">
+            <input class="text-input" type="text" id="InputTexto" placeholder="Ingrese el texto aquí">
+        </div>
+        <div class="right">
+            <img src="img/Muñeco.png" id="imgDer">
+            <h2 id="texto">Ningun mensaje fue encontrado</h2>
+            <div class="textarea-container">
+                <textarea id="texto2" name="name" rows="8" cols="80">
+				</textarea>
+                <button id="copiar" type="button" name="button" onclick="copy()">
+                    <span class="material-symbols-outlined" id="i-copy">
+                        content_copy
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="left-button">
+            <p>* Solo minusculas y sin acentos</p>
+            <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    </div>
+    <footer>
+        <img src="img/logo.png" alt="Logo de Alura">
+        <p class="copyright">&copy Copyright Challenge Alura - Encriptador 2024</p>
+    </footer>
+</body>
+
+</html>
